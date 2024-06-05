@@ -62,3 +62,5 @@ for i in range(9):
     board.append(row)
  
 solveSudoku(0, 0, board)
+
+#LEETCODE-37 https://pastebin.com/NKdTexw0
