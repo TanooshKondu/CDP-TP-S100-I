@@ -1,7 +1,7 @@
 #https://pastebin.com/Z9GnP1pJ
 # Problem link:
 #https://www.geeksforgeeks.org/problems/tower-of-hanoi-1587115621/1?itm_source=geeksforgeeks&itm_medium=article&itm_campaign=bottom_sticky_on_article
- 
+
 # Below function is responsible for moving 
 # n discs from src to dest using extra as temp space
 def moveAllDiscs(n, src, extra, dest):
@@ -13,6 +13,6 @@ def moveAllDiscs(n, src, extra, dest):
     moveAllDiscs(n - 1, src, dest, extra)
     print("Move", n, "th disc from", src, "to", dest)
     moveAllDiscs(n - 1, extra, src, dest)
- 
+
 moveAllDiscs(4, "source", "extraSpace", "destination")
 print("\n\n\n\n\n")
