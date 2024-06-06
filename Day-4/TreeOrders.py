@@ -41,3 +41,6 @@ root=tree.addNode(root,values[0])
 for i in range(1,len(values)):
     tree.addNode(root,values[i])
 tree.inOrder(root)
+###
+#
+#
