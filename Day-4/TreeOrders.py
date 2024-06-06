@@ -28,9 +28,17 @@ class BST:
         if root.right!=None:
             self.inOrder(root.right)
     def preOrder(self,root):
-        pass
+        print(root.data, end=",")
+        if root.left!=None:
+            self.inOrder(root.left)
+        if root.right!=None:
+            self.inOrder(root.right)
     def postOrder(self,root):
-        pass
+        if root.left!=None:
+            self.inOrder(root.left)
+        if root.right!=None:
+            self.inOrder(root.right)
+        print(root.data, end=",")
     def levelOrder(self,root):
         pass
 
