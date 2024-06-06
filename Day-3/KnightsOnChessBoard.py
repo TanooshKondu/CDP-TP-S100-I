@@ -15,8 +15,8 @@ def isPossible(x1, y1, x2, y2, N):
         if result == True:
             return True 
     return False
- 
- 
+
+
 result = isPossible(x1, y1, x2, y2, N)
 if result == True:
     print("Can reach")
