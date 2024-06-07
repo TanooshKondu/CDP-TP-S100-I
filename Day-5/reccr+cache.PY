@@ -8,7 +8,7 @@ def findNthTerm(n):
 
     result1 = findNthTerm(n - 1)
     result2 = findNthTerm(n - 2)
-    return result1 + result2 
+    return result1 + result2 #TIME COMPLLEXITY: O(2^n)
 
 # Using Memoization 
 def findNthTermUsingCache(n, cache):
@@ -20,7 +20,7 @@ def findNthTermUsingCache(n, cache):
     result1 = findNthTermUsingCache(n - 1, cache)
     result2 = findNthTermUsingCache(n - 2, cache)
     cache[n] = result1 + result2
-    return result1 + result2 
+    return result1 + result2 #TIME COMPLEXITY: O(n)
 
 # Tabulation approach (Ultimate Dynamic programming solution)
 def findNthTermUsingTabulation(n):
@@ -39,7 +39,7 @@ def findNthTermUsingTabulation(n):
         result2 = cache[index - 2]
         cache[index] = result1 + result2
 
-    return cache[n]
+    return cache[n] #TIME COMPLEXITY: O(n)
 
 
 
