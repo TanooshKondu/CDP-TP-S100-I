@@ -1,4 +1,4 @@
-#LEETCODE 70
+#LEETCODE 70, 746
 def findPathCount(i, n):
     if n == 1:
         return 1
