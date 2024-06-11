@@ -1,5 +1,4 @@
-def BinarySearch(nums,target,n,found,left,right):
-
+def BinarySearch(nums,target,n,found,left,right): 
     n = len(nums)
     if left <= right:
         mid = (left + right) // 2 
@@ -21,3 +20,5 @@ if  True:
     print("Target found")
 else:
     print("Target Not found")
+
+
