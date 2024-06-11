@@ -1,3 +1,5 @@
+#https://pastebin.com/Lrw4A3Q5
+
 def BubbleSort(nums):
     n = len(nums)
     pos = n-1
@@ -23,3 +25,15 @@ def BubbleSortRecc(nums,index1,index2):
 nums = [1, 4, 2, 16]
 BubbleSortRecc(nums,0,1)
 print(nums)
+
+##sir code----->>>>>>>>>>
+def performBubbleSort(nums, n):
+    if n == 1:
+        return 
+    # last index is (n - 1)
+    for index in range(n - 1):
+        if nums[index] > nums[index + 1]:
+            nums[index], nums[index + 1] = nums[index + 1], nums[index]
+ 
+    performBubbleSort(nums, n - 1)    
+ 
