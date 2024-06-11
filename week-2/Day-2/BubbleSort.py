@@ -22,9 +22,9 @@ def BubbleSortRecc(nums,index1,index2):
     if nums[index1]> nums[index2]:
         nums[index1], nums[index2] = nums[index2], nums[index1]
     return BubbleSortRecc(nums, index1+1, index2+1)
-nums = [1, 4, 2, 16]
-BubbleSortRecc(nums,0,1)
-print(nums)
+#nums = [1, 4, 2, 16]
+#BubbleSortRecc(nums,0,1)
+#print(nums)
 
 ##sir code----->>>>>>>>>>
 def performBubbleSort(nums, n):
@@ -36,4 +36,8 @@ def performBubbleSort(nums, n):
             nums[index], nums[index + 1] = nums[index + 1], nums[index]
  
     performBubbleSort(nums, n - 1)    
- 
+nums = [8, 1, 7, 6, 5, 4, 3, 2]
+
+print("Before sorting:", nums)
+performBubbleSort(nums, len(nums))
+print("After sorting:", nums)
