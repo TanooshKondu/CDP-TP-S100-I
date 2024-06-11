@@ -1,3 +1,5 @@
+#https://pastebin.com/Lrw4A3Q5
+
 def SelectionSort(nums):
     n = len(nums)
     Pos = n-1
@@ -18,4 +20,18 @@ SelectionSort(nums)
 print(nums)
 
 
-#def SelectionSortRecc(nums, index)
+#sir code --->>>>>>>>>
+def performSelectionSort(nums, n):
+    if n == 1:
+        return 
+ 
+    # fix (n-1)th index 
+    maxEleIndex = n - 1 
+    for index in range(n - 1):
+        if nums[index] > nums[maxEleIndex]:
+            maxEleIndex = index 
+ 
+    if maxEleIndex != n - 1:
+        nums[maxEleIndex], nums[n - 1] = nums[n - 1], nums[maxEleIndex]
+ 
+    performSelectionSort(nums, n - 1)
