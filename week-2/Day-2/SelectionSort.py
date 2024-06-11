@@ -40,3 +40,4 @@ nums = [8, 1, 7, 6, 5, 4, 3, 2]
 print("Before sorting:", nums)
 performSelectionSort(nums, len(nums))
 print("After sorting:", nums)
+
