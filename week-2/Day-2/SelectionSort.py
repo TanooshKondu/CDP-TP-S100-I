@@ -15,9 +15,9 @@ def SelectionSort(nums):
                 nums[Pos] = temp
         Pos -= 1
             
-nums = [9, 8, 7, 6, 5, 4, 3, 2, 10]
-SelectionSort(nums)
-print(nums)
+#nums = [9, 8, 7, 6, 5, 4, 3, 2, 10]
+#SelectionSort(nums)
+#print(nums)
 
 
 #sir code --->>>>>>>>>
@@ -35,3 +35,8 @@ def performSelectionSort(nums, n):
         nums[maxEleIndex], nums[n - 1] = nums[n - 1], nums[maxEleIndex]
  
     performSelectionSort(nums, n - 1)
+nums = [8, 1, 7, 6, 5, 4, 3, 2]
+
+print("Before sorting:", nums)
+performSelectionSort(nums, len(nums))
+print("After sorting:", nums)
