@@ -31,4 +31,3 @@ nums = [10, 5, 2, 6, 11, -5, 100, 99, 88, 110]
 result = findNextGreater(nums)
 print(result)
 ##########
-######
