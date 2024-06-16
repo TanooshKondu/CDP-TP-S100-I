@@ -32,4 +32,3 @@ result = findNextGreater(nums)
 print(result)
 ##########
 ######
-#######*args#
