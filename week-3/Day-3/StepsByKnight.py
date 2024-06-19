@@ -22,4 +22,4 @@ class Solution:
                 if newRow > 0 and newCol > 0 and newRow <= N and newCol <= N and (newRow, newCol) not in visited:
                     visited.add((newRow, newCol))
                     Q.append([newRow, newCol, steps + 1])
-    return -1
+        return -1
