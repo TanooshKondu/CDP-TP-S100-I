@@ -20,7 +20,6 @@ class Solution(object):
                     if newRow >= 0 and newCol >= 0 and newRow < m and newCol < n and board[newRow][newCol] == 'O':
                         board[newRow][newCol] = '#'
                         Q.append([newRow, newCol])
-
         for row in range(m):
             visitAll(row, 0)
             visitAll(row, n - 1)
