@@ -1,4 +1,5 @@
 #https://pastebin.com/SXsZNuup
+#leetcode-303, 304
 
 nums = [10, 2, 32, 15, 21, 5, -2]
 n = len(nums)
