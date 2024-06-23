@@ -14,4 +14,4 @@ class Solution(object):
                     curr.append(nums[j])
             result.append(curr)
         return result
-    ######
+    ##
